@@ -22,7 +22,7 @@ const Detail = () => {
           activewear, or even children's clothing, H&M has you covered with a
           range of options designed to fit various tastes and styles. One of
           H&M's defining characteristics is its commitment to affordability.
-          With a mission to make fashion accessible to a wide range o
+          With a mission to make fashion accessible to a wide range of
           consumers, H&M consistently offers budget-friendly choices, allowing
           customers to update their wardrobes without straining their budgets.
           This affordability does not come at the expense of quality, as the

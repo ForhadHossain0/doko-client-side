@@ -43,7 +43,7 @@ createUser(email,password)
       displayName: name,
       photoURL: photo
     })
-    .then(()=> console.log('profile updated'))
+    .then(()=> console.log('profile updated now.'))
     .catch(()=> console.log(error))
 
     Swal.fire({
