@@ -8,7 +8,6 @@ import { FcGoogle } from 'react-icons/fc';
 
 const Login = () => {
 
-
   
   const {loading} = useContext(AuthContext)
 
