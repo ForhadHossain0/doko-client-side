@@ -44,7 +44,7 @@ const Navbar = () => {
     </>
 
   return (
-    <div className="navbar  bg-[#F2F2F2] ">
+    <div className="navbar w-full bg-[#F2F2F2] ">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -63,17 +63,17 @@ const Navbar = () => {
 
       </div>
         <div className="navbar-center ">
-        <a  className="font-semibold flex items-center text-2xl"> <span className="text-rose-500 ">D</span> oko-Fashion    <FaShopify className="ml-2 text-lime-400"> </FaShopify> </a>
+        <a  className="font-semibold hidden md:flex items-center text-2xl"> <span className="text-rose-500 ">D</span> oko-Fashion    <FaShopify className="ml-2 text-lime-400"> </FaShopify> </a>
         </div>
 
       <div className="navbar-end m-0 ">
       {                  
         user && user ?  <> 
-                         <img className="w-12 h-12 border-2 border-lime-300 mr-5 rounded-full" src={user?.photoURL} alt="" />
-                         <Link to={'/'} onClick={handleToSingOut}   className="btn bg-[#787a79] border-0 btn-primary text-white rounded-none">Log out</Link>  
+                         <img className=" md:w-12 w-8 h-8 md:h-12 border-2 border-lime-300 mr-5 rounded-full" src={user?.photoURL} alt="" />
+                         <Link to={'/'} onClick={handleToSingOut}   className=" md:w-20 md:h-10 md:text-[16px] w-16 h-8 flex items-center justify-center text-[10px] bg-[#787a79] border-0  text-white rounded-none">Log out</Link>  
                         </> 
 
-                     :  <Link  to='/login' className="btn btn-primary  text-white rounded-none">Sing in</Link>
+                     :  <Link  to='/login' className="btn btn-primary  float-right  text-white rounded-none">Sing in</Link>
         
       }
       </div>

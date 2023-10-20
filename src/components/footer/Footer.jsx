@@ -5,12 +5,12 @@ const Footer = () => {
   return (
     <footer className="footer p-10  bg-base-200  mt-20  bottom-0 left-0   ">
       <aside>
-      <a className="font-semibold flex mx-auto justify-center items-center  text-2xl"> <span className="text-rose-500 text-3xl">D</span> oko-Fashion    <FaShopify className="ml-2 mt-1 text-lime-400"> </FaShopify> </a>
+      <a className="font-semibold flex mx-auto justify-center items-center  md:text-2xl"> <span className="text-rose-500 text-3xl">D</span> oko-Fashion    <FaShopify className="ml-2 mt-1 text-lime-400"> </FaShopify> </a>
         
         <p>
-          ACME Industries Ltd.
+         Doko fashion Ltd.
           <br />
-          Providing reliable tech since 1992
+          Providing reliable tech since 1999
         </p>
       </aside>
       <nav>
