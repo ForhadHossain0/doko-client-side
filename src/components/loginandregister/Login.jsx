@@ -74,7 +74,7 @@ const handleGoogleSingIn = () =>{
               <Link to={'/register'} className='py-2 text-white' >don't have an any account ? <span className="text-lime-400">please register </span></Link> 
         </div>
         </form>
-        <button onClick={handleGoogleSingIn} className="border-2 bg-slate-500 border-white  mt-10 justify-center w-[22rem] text-white mx-auto   font-bold md:p-4 p-2 flex items-center"> <FcGoogle className="text-2xl mr-3"> </FcGoogle>  Continue with Google</button> 
+        <button onClick={handleGoogleSingIn} className="border-2 bg-slate-300 border-white  mt-10 justify-center w-[22rem] mx-auto   font-bold md:p-4 p-2 flex items-center"> <FcGoogle className="text-2xl mr-3"> </FcGoogle>  Continue with Google</button> 
         </div>
      </div>
 

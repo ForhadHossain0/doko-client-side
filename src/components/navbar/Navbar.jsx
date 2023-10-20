@@ -50,7 +50,7 @@ const Navbar = () => {
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"  > <path  strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"d="M4 6h16M4 12h8m-8 6h16"  />  </svg>
           </label>
-          <ul tabIndex={0} className="menu space-y-3  py-5 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100  w-52" >
+          <ul tabIndex={0} className="menu space-y-3 dropdown-content mt-[14px] z-[1] py-4 shadow bg-base-100  w-52" >
             {links}
           </ul>
         </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
                          <Link to={'/'} onClick={handleToSingOut}   className=" md:w-20 md:h-10 md:text-[16px] w-16 h-8 flex items-center justify-center text-[10px] bg-[#787a79] border-0  text-white rounded-none">Log out</Link>  
                         </> 
 
-                     :  <Link  to='/login' className="btn btn-primary  float-right  text-white rounded-none">Sing in</Link>
+                     :  <Link  to='/login' className="md:w-20 md:h-10 md:text-[16px] w-16 h-8 flex items-center justify-center text-[10px] bg-primary float-right  text-white rounded-none">Sing in</Link>
         
       }
       </div>
