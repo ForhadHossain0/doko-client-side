@@ -30,7 +30,7 @@ const Detail = () => {
           standards of durability and comfort. In recent years, H&M has also
           taken substantial steps to address environmental and ethical concerns
           in the fashion industry. The company has launched initiatives like the
-          "Conscious Collection," which highlights its commitment to
+          "Conscious Collection," which highlights its commitment t00
           sustainability and responsible fashion practices. This includes using
           eco-friendly materials, reducing waste, and improving the ethical and
           environmental impact of their products and operations. H&M has
