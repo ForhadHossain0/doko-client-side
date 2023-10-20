@@ -7,6 +7,9 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { BsCart } from 'react-icons/bs';
 import { BiMessageAltAdd } from 'react-icons/bi';
 import { FaShopify } from 'react-icons/fa';
+import { BiLeaf } from 'react-icons/bi';
+import Swal from "sweetalert2";
+
 // import { BiMessageAltAdd } from 'react-icons/bi';
 // import { BiMessageAltAdd } from 'react-icons/bi';
 
@@ -23,9 +26,20 @@ const Navbar = () => {
   }
 
 
+
+  const hnadleNotAvailable = ()=>{
+    Swal.fire({
+      title: 'Unavail page!',
+      text: 'soory this page has no route or content is not create',
+      icon: 'error',
+      confirmButtonText: 'try another page'
+    })
+  }
+
     const links = <>
     <NavLink to='/'>          <li ><p href="" className="hover:rounded-none font-semibold "> <AiOutlineHome></AiOutlineHome> Home</p></li></NavLink>
     <NavLink to='/addproduct'><li ><p href="" className="hover:rounded-none font-semibold mr-2"> <BiMessageAltAdd></BiMessageAltAdd> Add Product</p></li></NavLink>
+    <li onClick={hnadleNotAvailable} ><p href=""className="hover:rounded-none font-semibold mr-2 "><BiLeaf></BiLeaf>Premium</p></li>
     <NavLink to='/mycart'>    <li ><p href="" className="hover:rounded-none font-semibold mr-2 text-lime-500"><BsCart></BsCart>My Cart</p></li></NavLink>
     </>
 
@@ -36,7 +50,7 @@ const Navbar = () => {
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"  > <path  strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"d="M4 6h16M4 12h8m-8 6h16"  />  </svg>
           </label>
-          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52" >
+          <ul tabIndex={0} className="menu space-y-3  py-5 dropdown-content mt-3 z-[1] p-2 shadow bg-base-100  w-52" >
             {links}
           </ul>
         </div>

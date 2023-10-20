@@ -5,12 +5,12 @@ const Detail = () => {
   console.log(data);
 
   return (
-    <div>
-      <div className="">
-        <img className="mx-auto " src={data.photo} alt="" />
-        <p className="text-4xl text-lime-400 font-bold py-10">{data.name}</p>
-        <p className="text-left py-10">
-          H&M, short for Hennes & Mauritz, is a globally recognized Swedish
+    <div className=""> 
+      <div className="mt-10 ">
+        <img className="mx-auto  shadow  p-10 " src={data.photo} alt="" />
+        <p className="text-3xl text-left  border-black md:ml-10 text-rose-400 font-bold mt-10">Product name - <span className="text-black"> {data.name}</span></p>
+        <p className="text-justify p-10  text-slate-500">
+          This brands products  is a globally recognized Swedish
           fashion retail powerhouse that has become synonymous with accessible
           and diverse clothing options. The brand offers an extensive and varied
           selection of clothing and accessories tailored to individuals of all

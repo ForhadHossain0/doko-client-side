@@ -32,7 +32,7 @@ const Updateproduct = () => {
     };
     console.log(addUpdateDataValues);
 
-    fetch(`http://localhost:5000/products/${_id}`, {
+    fetch(`https://backend-server-8qgd4pfvx-forhads-projects.vercel.app/products/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

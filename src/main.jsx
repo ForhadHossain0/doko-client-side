@@ -28,12 +28,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch(`http://localhost:5000/products`),
+        loader: () => fetch(`https://backend-server-8qgd4pfvx-forhads-projects.vercel.app/products`),
       },
       {
         path: "/mycart",
         element: <Privetroute> <Mycarts></Mycarts> </Privetroute>,
-        loader: () => fetch(`http://localhost:5000/products`),
+        loader: () => fetch(`https://backend-server-8qgd4pfvx-forhads-projects.vercel.app/products`),
       },
       {
         path: "/addproduct",
@@ -42,37 +42,37 @@ const router = createBrowserRouter([
       {
         path: "/updateproduct/:_id",
         element: <Updateproduct></Updateproduct>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params._id}`),
+        loader: ({ params }) => fetch(`https://backend-server-8qgd4pfvx-forhads-projects.vercel.app/products/${params._id}`),
       },
       {
         path: "/brand1",
         element: <Privetroute> <Brand1></Brand1> </Privetroute> ,
-        loader: () => fetch(`http://localhost:5000/products`),
+        loader: () => fetch(`https://backend-server-8qgd4pfvx-forhads-projects.vercel.app/products`),
       },
       {
         path: "/brand2",
         element: <Privetroute> <Brand2></Brand2></Privetroute>,
-        loader: () => fetch(`http://localhost:5000/products`),
+        loader: () => fetch(`https://backend-server-8qgd4pfvx-forhads-projects.vercel.app/products`),
       },
       {
         path: "/brand3",
         element: <Privetroute><Brand3></Brand3></Privetroute>,
-        loader: () => fetch(`http://localhost:5000/products`),
+        loader: () => fetch(`https://backend-server-8qgd4pfvx-forhads-projects.vercel.app/products`),
       },
       {
         path: "/brand4",
         element: <Privetroute><Brand4></Brand4></Privetroute>,
-        loader: () => fetch(`http://localhost:5000/products`),
+        loader: () => fetch(`https://backend-server-8qgd4pfvx-forhads-projects.vercel.app/products`),
       },
       {
         path: "/brand5",
         element: <Privetroute><Brand5></Brand5></Privetroute>,
-        loader: () => fetch(`http://localhost:5000/products`),
+        loader: () => fetch(`https://backend-server-8qgd4pfvx-forhads-projects.vercel.app/products`),
       },
       {
         path:'/detailproduct/:_id',
         element: <Detail></Detail>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params._id}`),
+        loader: ({ params }) => fetch(`https://backend-server-8qgd4pfvx-forhads-projects.vercel.app/products/${params._id}`),
       },
       {
         path: "/login",
