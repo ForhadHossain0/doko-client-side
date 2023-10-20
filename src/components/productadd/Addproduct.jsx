@@ -19,7 +19,7 @@ const handleAddProduct = e =>{
     const addDataValues = {photo, name, brandname, type,  price, details, rating};
     console.log(addDataValues) 
     
-    fetch('https://backend-server-8qgd4pfvx-forhads-projects.vercel.app/products', {
+    fetch('https://backend-server-q0zcknmh5-forhads-projects.vercel.app/products', {
         method:'POST',
         headers:{
             'content-type' : 'application/json'

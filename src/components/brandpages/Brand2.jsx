@@ -1,7 +1,15 @@
 import { Link, useLoaderData } from "react-router-dom";
+import { AuthContext } from "../provider/Authprovider";
+import { useContext } from "react";
 
 
 const Brand2 = () => {
+  
+  const {loading} = useContext(AuthContext)
+
+  if(loading){
+      return <div>  <span className="loading loading-spinner text-info loading-xl mt-40 "></span>  <h2 className='text-xl  text-teal-700'>! please wait content is Loading . . . . </h2>  </div>
+  }
 
   const data = useLoaderData();
   // console.log(data) 

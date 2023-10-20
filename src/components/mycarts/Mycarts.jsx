@@ -1,9 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Swal from 'sweetalert2'
+import { AuthContext } from "../provider/Authprovider";
 
 
 const Mycarts = () => {
+
+
+  const {loading} = useContext(AuthContext)
+
+  if(loading){
+      return <div>  <span className="loading loading-spinner text-info loading-xl mt-40 "></span>  <h2 className='text-xl  text-teal-700'>! please wait content is Loading . . . . </h2>  </div>
+  }
+
   const getData = useLoaderData();
   console.log(getData)
   
@@ -21,7 +30,7 @@ const handleDeleteProduct = (_id) =>{
       })
  .then( result => {
     if (result.isConfirmed) { 
-      fetch(`https://backend-server-8qgd4pfvx-forhads-projects.vercel.app/products/${_id}` , {method:'DELETE', } )
+      fetch(`https://backend-server-q0zcknmh5-forhads-projects.vercel.app/products/${_id}` , {method:'DELETE', } )
      .then(res=> res.json())
      .then(data => {
         if(data.deletedCount > 0){

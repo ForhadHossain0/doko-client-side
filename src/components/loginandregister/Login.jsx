@@ -8,6 +8,14 @@ import { FcGoogle } from 'react-icons/fc';
 
 const Login = () => {
 
+
+  
+  const {loading} = useContext(AuthContext)
+
+  if(loading){
+      return <div>  <span className="loading loading-spinner text-info loading-xl mt-40 "></span>  <h2 className='text-xl  text-teal-700'>! please wait content is Loading . . . . </h2>  </div>
+  }
+
   const {logIn} = useContext(AuthContext);
   // const [message,setMessage] = useState('')
   const location = useLocation();
