@@ -6,9 +6,9 @@ const Detail = () => {
 
   return (
     <div className=""> 
-      <div className="mt-10 ">
-        <img className="mx-auto  shadow  p-10 " src={data.photo} alt="" />
-        <p className="text-3xl text-left  border-black md:ml-10 text-rose-400 font-bold mt-10">Product name - <span className="text-black"> {data.name}</span></p>
+      <div className="mt-10 mx-auto">
+        <img className="mx-auto  shadow h-[500px]  p-2 " src={data.photo} alt="" />
+        <p className="md:text-3xl text-left  border-black ml-10 text-rose-400 font-bold mt-10">Product name - <span className="text-black"> {data.name}</span></p>
         <p className="text-justify p-10  text-slate-500">
           This brands products  is a globally recognized Swedish
           fashion retail powerhouse that has become synonymous with accessible

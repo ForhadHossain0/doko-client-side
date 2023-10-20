@@ -42,16 +42,16 @@ const handleDeleteProduct = (_id) =>{
 
   return (
     <div>
-      <h2 className="my-12 ml-10 text-left text-3xl font-bold">Your Added products Total : <span className=" text-4xl text-green-600">{product.length}</span></h2>
+      <h2 className="my-12 ml-10 text-left md:text-3xl font-bold">Your Added products Total : <span className=" text-4xl text-green-600">{product.length}</span></h2>
 
-      <div className="md:grid grid-cols-2 mx-auto bg-base-200 py-10  ">
+      <div className="md:grid md:grid-cols-2 mx-auto bg-base-200 py-10  ">
       { product.map(product => (     
-        <div key={product._id} className=" md:w-[550px] shadow h-36 rounded mx-10 md:mx-auto  p-5   ">
+        <div key={product._id} className=" md:w-[550px] w-full shadow md:h-36 rounded md:mx-10   p-5   ">
            <div className=" flex text-left justify-between items-center rounded-md ">
             <img className="rounded-xl bg-slate-200 w-20 h-20" src={product.photo}  alt=""  />
-            <p className="text-left"><span className="font-bold  text-green-600">{product.name}</span> <br /> <span>{product.brandname}</span> </p>
+            <p className="text-left text-sm mx-1 md:text-lg"><span className="font-bold  text-green-600">{product.name}</span> <br /> <span>{product.brandname}</span> </p>
             <p className="font-bold text-left text-green-400" >${product.price}</p>
-            <button onClick={()=> handleDeleteProduct(product._id)} className="text-2xl hover:text-red-500 mr-2">X</button>
+            <button onClick={()=> handleDeleteProduct(product._id)} className="text-2xl hover:text-red-500 mx-2">X</button>
             </div>
         </div>
         
