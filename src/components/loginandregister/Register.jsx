@@ -73,10 +73,10 @@ createUser(email,password)
       <img className='md:w-[42%] relative ' src="https://img.freepik.com/free-vector/cyber-data-security-online-concept-illustration-internet-security-information-privacy-protection_1150-37328.jpg"  />
         <p className='text-red-400 w-[500px] left-20 top-20 absolute  text-xl'> {message}</p>
         <div className='md:w-[50%] '>
-        <form onSubmit={handleToSubmit} className="card-body w-full -mt-48  h-[420px] ">
+        <form onSubmit={handleToSubmit} className="card-body w-full   h-[600px]  ">
 
         <div className="form-control mx-auto ">
-         <h1 className='text-2xl font-bold text-white'>Register  your account </h1>
+         <h1 className='lg:text-2xl font-bold text-white'>Register  your account </h1>
          {/* <p className='text-slate-300 py-3'>Plese login your account and get the services, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, officia.</p> */}
         </div>
 
@@ -103,7 +103,7 @@ createUser(email,password)
 
         <div className="form-control  w-[80%] mx-auto "> 
               <button className="btn mt-6 border-0 rounded-none bg-black text-white hover:bg-slate-500 ">Register</button>  
-              <Link to={'/login'} className='py-2 text-white' >Already have an account ? <span className=" text-lime-300 ">please login </span></Link> 
+              <Link to={'/login'} className='py-2 text-[12px] lg:text-lg text-white' >Already have an account ? <span className=" text-lime-300 ">please login </span></Link> 
         </div>
         
         </form>

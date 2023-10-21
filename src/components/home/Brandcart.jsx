@@ -23,7 +23,7 @@ const handleProductAvailability = () =>{
         <h1 className='md:text-4xl text-xl font-semibold mt-16'>Our Most standard products Brands  here</h1>
         <p>if you haved chosen any  brand here from her then please explor it.</p>
        <div className="flex px-10 justify-center">
-       <div className='grid  md:grid-cols-3   my-16'>
+       <div className='grid  md:grid-cols-2 lg:grid-cols-3   my-16'>
 
 
              <Link  to={'/brand1'}>

@@ -61,27 +61,29 @@ const handleGoogleSingIn = () =>{
         <div className='md:w-[40%]'>
         <form onSubmit={handleToSubmit} className="card-body w-full space-y-3  items-center h-[500px] ">
 
-        <div className="form-control  mx-auto ">
-         <h1 className='text-4xl font-bold text-white'>Acccount Login </h1>
-         <p className='text-slate-300 py-3'>Plese login your account and get the services, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, officia.</p>
+        <div className="form-control w-full mx-auto ">
+         <h1 className='lg:text-4xl  font-bold text-white'>Acccount Login </h1>
+         <p className='text-slate-300 text-[14px] lg:text-lg py-3'>Plese login your account and get the services, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, officia.</p>
         </div>
 
-        <div className="form-control  w-[80%] mx-auto ">
-        <label className=" text-white text-lg text-left mb-4">Email </label>
+        <div className="form-control w-full  md:w-[80%] mx-auto ">
+        <label className=" text-white text-lg text-left mb-2">Email </label>
         <input type="email"  name='email' placeholder="enter your email" className="input rounded-none " required />
         </div>
 
-        <div className="form-control w-[80%] mx-auto ">
-        <label className=" text-left text-white text-lg mb-4 ">Password  </label>
+        <div className="form-control w-full md:w-[80%] mx-auto ">
+        <label className=" text-left text-white text-lg mb-2 ">Password  </label>
         <input type="password" name='password' placeholder="enter your password" className="input rounded-none" required />
         </div>
 
-        <div className="form-control  w-[80%] mx-auto "> 
-              <button className="btn mt-6 border-0 rounded-none hover:bg-slate-500 ">Login</button> 
-              <Link to={'/register'} className='py-2 text-white' >don't have an any account ? <span className="text-lime-400">please register </span></Link> 
+        <div className="form-control w-full  md:w-[80%] mx-auto "> 
+              <button className="btn btn-success mt-4 border-0 rounded-none hover:bg-slate-500 ">Login</button> 
+              <Link to={'/register'} className='py-2 text-left text-[12px] lg:text-lg  text-white' >don't have an any account ? <span className="text-lime-400">please register </span></Link> 
         </div>
         </form>
-        <button onClick={handleGoogleSingIn} className="border-2 bg-slate-300 border-white  mt-10 justify-center w-[22rem] mx-auto   font-bold md:p-4 p-2 flex items-center"> <FcGoogle className="text-2xl mr-3"> </FcGoogle>  Continue with Google</button> 
+         <div className='w-[80%] mx-auto'>
+        <button onClick={handleGoogleSingIn} className="border-2 lg:mt-10 bg-slate-300 border-white p-2 flex  justify-center w-full lg:w-[22rem] mx-auto font-bold  "> <FcGoogle className="text-2xl mr-3"> </FcGoogle>  Continue with Google</button> 
+         </div>
         </div>
      </div>
 

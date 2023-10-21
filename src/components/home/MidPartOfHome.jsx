@@ -49,7 +49,7 @@ const MidPartOfHome = ({data}) => {
 
       <h1 className="md:text-5xl text-2xl w-full  text-center mx-auto mt-16 font-bold text-[#d1dd2b]">Season Collections</h1>
 
-  <div className=" md:flex gap-10 px-10 justify-center ">
+  <div className=" md:flex  gap-10 px-10 justify-center ">
 
 
        <div className="card mt-10 shadow-2xl hover:shadow rounded-none md:w-80 bg-base-100  md:h-[520px] mx-auto text-center ">
