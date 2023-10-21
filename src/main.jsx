@@ -18,6 +18,7 @@ import Updateproduct from "./components/productupdate/Updateproduct";
 import Detail from "./components/productdetail/Detail";
 import Authprovider from "./components/provider/Authprovider";
 import Privetroute from "./components/privetroute/Privetroute";
+import User from "./components/user/User";
 
 const router = createBrowserRouter([
   {
@@ -82,6 +83,11 @@ const router = createBrowserRouter([
         path: "/register",
         element: <Register></Register>,
       },
+      {
+        path:'/users',
+        element: <User></User>,
+        loader: ()=> fetch('https://backend-server-beta.vercel.app/users')
+      }
     ],
   },
 ]);

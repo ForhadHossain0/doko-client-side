@@ -30,7 +30,23 @@ const Login = () => {
     // setMessage('')
 
     logIn(email,password)
-    .then(() => {
+    .then((result) => {
+      const users = {
+        email,
+        loginTime : result.user?.metadata?.lastSignInTime
+      }
+
+      fetch('https://backend-server-beta.vercel.app/users',{
+        method: 'PATCH',
+        headers : {
+          'content-type' : 'application/json'
+        },
+        body: JSON.stringify(users)
+      })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+      })
       returnHome(location?.state ? location.state : '/');
     })
     .catch((error)=>{

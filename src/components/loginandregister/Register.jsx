@@ -39,15 +39,32 @@ const Register = () => {
 createUser(email,password)
   .then((result) => {
     
+
     updateProfile(result.user,{
       displayName: name,
       photoURL: photo
     })
     .then(()=> console.log('profile updated now.'))
     .catch(()=> console.log(error))
+    
+    /////user data send in server
+    const createdTime = result.user.metadata.lastSignInTime;
+    const user = {email,createdTime};
+    fetch('https://backend-server-beta.vercel.app/users',{
+      method: 'POST',
+      headers : {
+        'content-type' : 'application/json'
+      },
+      body: JSON.stringify(user)
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data);
+    })
 
+    
     Swal.fire({
-      title: 'Registration Success!',
+      title:'Registration Success!',
       text: 'registration successfully complete',
       icon: 'success',
       confirmButtonText: 'Okk'

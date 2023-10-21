@@ -8,6 +8,8 @@ const Authprovider = ({children}) => {
 
     const [user,setuser] = useState(null);
     const [loading,setLoading] = useState(true);
+
+    
      // go register 
      const createUser = (email,password) => {
          setLoading(true)
