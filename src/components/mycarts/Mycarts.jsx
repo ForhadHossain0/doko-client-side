@@ -30,7 +30,7 @@ const handleDeleteProduct = (_id) =>{
       })
  .then( result => {
     if (result.isConfirmed) { 
-      fetch(`https://backend-server-q0zcknmh5-forhads-projects.vercel.app/products/${_id}` , {method:'DELETE', } )
+      fetch(`https://backend-server-beta.vercel.app/products/${_id}` , {method:'DELETE', } )
      .then(res=> res.json())
      .then(data => {
         if(data.deletedCount > 0){

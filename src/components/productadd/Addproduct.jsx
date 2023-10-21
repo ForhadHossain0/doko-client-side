@@ -19,7 +19,7 @@ const handleAddProduct = e =>{
     const addDataValues = {photo, name, brandname, type,  price, details, rating};
     console.log(addDataValues) 
     
-    fetch('https://backend-server-q0zcknmh5-forhads-projects.vercel.app/products', {
+    fetch('https://backend-server-beta.vercel.app/products', {
         method:'POST',
         headers:{
             'content-type' : 'application/json'
@@ -92,7 +92,8 @@ const handleAddProduct = e =>{
                     <label htmlFor="">Details</label><br /> <input placeholder='Enter a products details' type="text" name="details" className=" my-2 w-[420px] h-9 p-2" />
                 </div>
                  <div>
-                  <label htmlFor="">rating</label><br /> <input placeholder='Enter a products rating' type="text" name="rating" className="bmy-2 w-[420px] h-9 p-2" />
+                  <label htmlFor="">rating</label><br /> 
+                  <input placeholder='Enter a products rating' type="text" name="rating" className="bmy-2 w-[420px] h-9 p-2" />
                 </div>
                </div>
 
