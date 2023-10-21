@@ -12,3 +12,14 @@
   color: red;
 }
 
+/* brandcart */
+.star {
+  font-size: 24px;
+  color: #ccc; /* Color of empty stars */
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.star.filled {
+  color: #f0d31c; /* Color of filled stars */
+}

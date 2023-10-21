@@ -1,20 +1,34 @@
 import React, { useContext } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../provider/Authprovider';
+import '../../index.css'
+
 
 const Brand1 = () => {
+ 
+const {loading} = useContext(AuthContext)
 
-  
-  const {loading} = useContext(AuthContext)
-
-  if(loading){
-      return <div>  <span className="loading loading-spinner text-info loading-xl mt-40 "></span>  <h2 className='text-xl  text-teal-700'>! please wait content is Loading . . . . </h2>  </div>
+if(loading){
+      return <div>  <span className="loading loading-spinner text-info loading-xl mt-40 "></span>  <h2 className='text-xl  text-teal-700'>! please wait content is Loading . . . . </h2>  </div> 
   }
 
 const data = useLoaderData();
 // console.log(data) 
 const HM = data.filter(data => data.brandname === 'H&M' ) 
 console.log(HM)
+
+
+function MyRating(rats) {
+  const totalstars = 5;
+  const starfilled = Math.min(5, Math.max(0, rats)); 
+  const element = [];
+  for (let i = 1; i <= totalstars; i++) {
+    element.push(
+      <span key={i} className={`star ${i <= starfilled ? 'filled' : 'empty'}`}> ★  </span>
+    ); }
+  return element;
+}
+
 
 return (
       <div className=''>
@@ -76,7 +90,7 @@ return (
           <p className='text-slate-400 '>Type - {HM.type}</p>
           <h2 className='text-xl text-lime-400 font-semibold '>{HM.name}</h2>
           <h1>Price : <span className='text-xl text-pink-600'>{HM.price}</span>$</h1>
-          <p>⭐⭐⭐⭐</p> {/* rating will add later */}
+          <p>{MyRating(HM.rating)} </p>
           <p className=' text-left text-sm '>{HM.details}</p>
 
 
